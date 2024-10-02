@@ -9,9 +9,6 @@ class ConfigConsumer(Protocol):
 
 class ConfigManager(Protocol):
 
-    async def create_config(self):
-        ...
-
     async def update_config(self):
         ...
 

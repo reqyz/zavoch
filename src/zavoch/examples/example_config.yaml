@@ -1,0 +1,16 @@
+shopping_bag:
+  - products:
+      output:
+        - bag:
+            mask: "bag.*.*"
+            info: "mask contains bag.purchase_date.store_name"
+  - separator:
+      input:
+        - "bag.*.*"
+      output:
+        - eatable:
+            mask: "product.*"
+            info: "product can be fruit or vegetable"
+        - rotten:
+            mask: "rotten.*"
+            info: "expired or stink"

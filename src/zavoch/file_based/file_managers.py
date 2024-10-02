@@ -11,8 +11,5 @@ class YamlConfigManager(ConfigConsumer, ConfigManager):
     async def get_config(self):
         return await super().get_config()
 
-    async def create_config(self):
-        return await super().create_config()
-
     async def update_config(self):
         return await super().update_config()
